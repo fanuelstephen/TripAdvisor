@@ -1,9 +1,9 @@
-@media only screen and (min-width: 374px) {
-  header {
-    height: 50vh;
-  }
+@media only screen and (min-width: 280px) {
   #menubtn {
     display: block;
+  }
+  header {
+    height: 50vh;
   }
   .navbar {
     position: absolute;
@@ -15,6 +15,14 @@
     padding: 15px 30px;
     background-color: rgb(57, 59, 59);
     display: block;
+  }
+  .navbar a {
+    align-items: center;
+    display: block;
+    margin: 1rem 0;
+  }
+  .open {
+    right: 0;
   }
   .navbar ul {
     display: flex;
@@ -29,17 +37,149 @@
     display: flex;
     flex-direction: column;
   }
-  .navbar a {
-    align-items: center;
-    display: block;
-    margin: 1rem 0;
-  }
-  .open {
-    right: 0;
+  .header-content p {
+    font-size: 1rem;
   }
   .header-content {
     padding: 30px 2rem;
   }
+  .heading {
+    font-size: 18px;
+    margin-bottom: 1.4rem;
+  }
+  .text {
+    margin-top: 1rem;
+  }
+  .form-inner {
+    padding: 10px 5px;
+    margin-bottom: 1.5rem;
+  }
+  .form-inner p,
+  .form-inner input {
+    font-size: 12px;
+  }
+  .form-inner input {
+    padding-left: 5px;
+  }
+  .form-inner p {
+    padding-right: 6px;
+  }
+  .text-cta {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+  img {
+    width: 14rem;
+    height: 15rem;
+  }
+  .about-us-content {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .about-us h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+  .about-us-content h2 {
+    font-size: 19px;
+  }
+  .discription p {
+    font-size: 11px;
+  }
+  .discription a {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+  .destination-heading h2 {
+    font-size: 18px;
+    margin-bottom: 9px;
+  }
+  .destination-heading a {
+    font-size: 12px;
+  }
+  .destination-heading {
+    margin-bottom: 2.8rem;
+  }
+  .destination-img {
+    grid-template-columns: 1fr;
+  }
+  .offer-img {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-content {
+    flex-direction: column;
+  }
+  .testimonial-textBox p {
+    font-size: 11px;
+    padding: 1.8rem;
+  }
+  .text-center {
+    gap: 2rem;
+  }
+  .blog-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .blog-img {
+    width: 240px;
+    height: 264px;
+  }
+  .clint-info h6 {
+    font-size: 11px;
+    margin-bottom: 3px;
+  }
+  .client-photo {
+    width: 60px;
+    height: 60px;
+  }
+  .clint-info {
+    margin-bottom: 1.2rem;
+  }
+  .logo-title {
+    font-size: 2rem;
+  }
+  .social-icon {
+    width: 24px;
+    height: 27px;
+  }
+  .phone-no {
+    font-size: 15px;
+  }
+  .email {
+    font-size: 11px;
+  }
+  footer {
+    padding: 50px 1rem;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-list h4 {
+    font-size: 13px;
+    margin-bottom: 9px;
+  }
+  .footer-list li {
+    font-size: 9px;
+  }
+  .end p {
+    font-size: 10px;
+    margin-top: 2rem;
+  }
+  .blog h2 {
+    margin: 1.5rem 0;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+}
+
+/* ======iphone X, 12promax  */
+@media only screen and (min-width: 374px) {
+  header {
+    height: 50vh;
+  }
+
   .text {
     margin-top: 2rem;
   }
@@ -70,7 +210,6 @@
   .discription p {
     font-size: 12px;
     line-height: 1.5;
-
     margin-bottom: 1.4rem;
   }
   .about-us-content {
@@ -198,4 +337,4 @@
     flex-direction: column;
     align-items: center;
   }
-} ;
+}
