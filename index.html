@@ -13,6 +13,7 @@
     />
     <!-- ==css link -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>TripAdvisor</title>
   </head>
   <body>
@@ -31,13 +32,18 @@
             <button class="cta">Log in</button>
           </div>
         </div>
+        <!-- ==mobile menu -->
+        <ion-icon class="bx-menu" id="menubtn" name="menu-outline"></ion-icon>
       </div>
+
       <div class="text">
         <p class="heading">Find Your <strong>Perfect Place</strong></p>
         <form action="#">
-          <p class="where-to">Where to</p>
-          <input type="text" placeholder="Enter your location here" />
-          <a class="text-cta" href="#">Seach</a>
+          <div class="form-inner">
+            <p class="where-to">Where to?</p>
+            <input type="text" placeholder="Enter your location here" />
+          </div>
+          <a class="text-cta" href="#">Search</a>
         </form>
       </div>
     </header>
@@ -314,24 +320,24 @@
       <div class="blog">
         <h2>From the Blog</h2>
         <div class="blog-content">
-          <img src="/img/water-fall1.jpg" alt="" />
+          <img class="blog-img" src="/img/water-fall1.jpg" alt="" />
           <div class="client">
             <div class="clint-info">
-              <img src="/img/client-1.jpg" alt="" />
+              <img class="client-photo" src="/img/client-1.jpg" alt="" />
               <div>
                 <h6>Lorem ipsum dolor sit .</h6>
                 <p>@jmaik</p>
               </div>
             </div>
             <div class="clint-info">
-              <img src="/img/client-2.jpg" alt="" />
+              <img class="client-photo" src="/img/client-2.jpg" alt="" />
               <div>
                 <h6>Lorem ipsum dolor sit .</h6>
                 <p>@jmaik</p>
               </div>
             </div>
             <div class="clint-info">
-              <img src="/img/client-3.jpg" alt="" />
+              <img class="client-photo" src="/img/client-3.jpg" alt="" />
               <div>
                 <h6>Lorem ipsum dolor sit .</h6>
                 <p>@jmaik</p>
@@ -402,5 +408,15 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- <script>
+      let menu = document.querySelector("#menubtn");
+      let navbar = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("bx-menu");
+        navbar.classList.toggle("open");
+      };
+    </script> -->
   </body>
 </html>
