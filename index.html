@@ -22,18 +22,23 @@
         <p>Trip<strong>Advisor</strong></p>
         <div class="navbar">
           <ul>
-            <li>Home</li>
-            <li>Hotel</li>
-            <li>Vacation Rental</li>
-            <li>Travel Forums</li>
+            <li class="nav-link">Home</li>
+            <li class="nav-link">Hotel</li>
+            <li class="nav-link">Vacation Rental</li>
+            <li class="nav-link">Travel Forums</li>
           </ul>
-          <div class="ctas">
+          <div class="ctas nav-link">
             <a href="#">Sign Up</a>
-            <button class="cta">Log in</button>
+            <button class="cta nav-link">Log in</button>
           </div>
         </div>
         <!-- ==mobile menu -->
-        <ion-icon class="bx-menu" id="menubtn" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="bx-menu" id="menubtn" name="menu-outline"></ion-icon> -->
+        <div class="hamberger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
 
       <div class="text">
@@ -409,14 +414,26 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <!-- <script>
-      let menu = document.querySelector("#menubtn");
-      let navbar = document.querySelector(".navbar");
+    <script>
+      const hamberger = document.querySelector(".hamberger");
+      const navBar = document.querySelector(".navbar");
 
-      menu.onclick = () => {
-        menu.classList.toggle("bx-menu");
-        navbar.classList.toggle("open");
+      hamberger.addEventListener("click", () => {
+        hamberger.classList.toggle("active");
+        navBar.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamberger.classList.remove("active");
+          navBar.classList.remove("active");
+        })
+      );
+
+      window.onscrollY = () => {
+        hamberger.classList.remove(".hamberger");
+        navBar.classList.remove(".navbar");
       };
-    </script> -->
+    </script>
   </body>
 </html>

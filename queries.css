@@ -1,27 +1,36 @@
 @media only screen and (min-width: 280px) {
-  #menubtn {
+  .hamberger {
     display: block;
+  }
+
+  .hamberger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamberger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamberger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   header {
     height: 50vh;
   }
   .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100%;
-    width: 270;
-    height: 50vh;
-    z-index: 1001;
-    padding: 15px 30px;
-    background-color: rgb(57, 59, 59);
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #130a0a;
     display: block;
+    text-align: left;
   }
   .navbar a {
     align-items: center;
     display: block;
     margin: 1rem 0;
   }
-  .open {
+  .navbar.active {
     right: 0;
   }
   .navbar ul {
@@ -32,10 +41,12 @@
   }
   .navbar ul li {
     font-size: 12px;
+    text-align: left;
   }
   .ctas {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .header-content p {
     font-size: 1rem;

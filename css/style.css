@@ -135,12 +135,19 @@ header {
 .text-cta:hover {
   background-color: #b55a26;
 }
-#menubtn {
-  width: 2.5rem;
-  height: 2.5rem;
-  color: #fff;
-  cursor: pointer;
+.hamberger {
   display: none;
+  cursor: pointer;
+  margin-right: 3rem;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 /* locations */
 section {
